@@ -13,7 +13,7 @@ const Index = () => {
   
   const pages = [
     { component: CoverPage, title: "Cover" },
-    { component: AboutPage, title: "About Her" },
+    { component: AboutPage, title: "About Aunty Shola" },
     { component: GalleryPage, title: "Gallery" },
     { component: WishesPage, title: "Birthday Wishes" }
   ];
@@ -37,32 +37,8 @@ const Index = () => {
       {/* Magazine Container */}
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
-          {/* Page Counter */}
-          <div className="text-center mb-6">
-            <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 shadow-md">
-              <span className="text-sm font-medium text-gray-600">
-                Page {currentPage + 1} of {pages.length}
-              </span>
-              <div className="flex gap-1">
-                {pages.map((_, index) => (
-                  <div
-                    key={index}
-                    className={`w-2 h-2 rounded-full transition-colors ${
-                      index === currentPage ? "bg-pink-500" : "bg-gray-300"
-                    }`}
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Magazine Page */}
-          <div className="bg-white rounded-lg shadow-2xl overflow-hidden min-h-[80vh] relative">
-            <CurrentPageComponent />
-          </div>
-
-          {/* Navigation */}
-          <div className="flex justify-between items-center mt-6">
+           {/* Navigation */}
+           <div className="flex justify-between items-center py-6">
             <Button
               onClick={prevPage}
               disabled={currentPage === 0}
@@ -100,6 +76,32 @@ const Index = () => {
               Next
               <ChevronRight className="w-4 h-4" />
             </Button>
+          </div>
+
+          {/* Magazine Page */}
+          <div className="bg-white rounded-lg shadow-2xl overflow-hidden min-h-[80vh] relative">
+            <CurrentPageComponent />
+          </div>
+
+         
+
+          {/* Page Counter */}
+          <div className="text-center mb-6">
+            <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 shadow-md">
+              <span className="text-sm font-medium text-gray-600">
+                Page {currentPage + 1} of {pages.length}
+              </span>
+              <div className="flex gap-1">
+                {pages.map((_, index) => (
+                  <div
+                    key={index}
+                    className={`w-2 h-2 rounded-full transition-colors ${
+                      index === currentPage ? "bg-pink-500" : "bg-gray-300"
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

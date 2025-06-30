@@ -1,73 +1,32 @@
-# Welcome to your Lovable project
+# A Birthday Magazine
 
-## Project info
+A birthday magazine is a collection of memories, photos, and stories that celebrate the life of a special person on their birthday. It can be a physical or digital book that includes a variety of content, such as photos, quotes, and personal stories. The magazine can be created to commemorate a specific birthday or to mark the passing of a year.
 
-**URL**: https://lovable.dev/projects/cf6e7d8d-a571-4ebd-bc50-08231d0d0867
+## Features
 
-## How can I edit this code?
+- Cover Page
+- About Page
+- Gallery Page
+- Wishes Page
 
-There are several ways of editing your application.
+## Technologies
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/cf6e7d8d-a571-4ebd-bc50-08231d0d0867) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
 - React
-- shadcn-ui
+- Vite
 - Tailwind CSS
+- Shadcn UI
+- React Router
+- React Hook Form
+- React Day Picker
+- Recharts
+- Sonner
+- Vaul
+- Zod
 
-## How can I deploy this project?
+## How to run the project
 
-Simply open [Lovable](https://lovable.dev/projects/cf6e7d8d-a571-4ebd-bc50-08231d0d0867) and click on Share -> Publish.
+- Clone the repository
+- Install dependencies
+- Run the project
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## License
